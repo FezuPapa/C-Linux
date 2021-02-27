@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -6,6 +7,7 @@ int main()
   int num1, num2;
   int loop = 1;
   char oper;
+  char userinput;
 
 
   while(loop)
@@ -39,18 +41,16 @@ int main()
          printf("= %d\n\n", num1 / num2);
          break;
         }
-
             
-            char userinput;;
+            printf("Y/N Would you like to continue ?\n");
             
-
-            printf("Y/N Would you like to continue ?\n\n");
-            scanf("%c", &userinput);
+            scanf("%s", &userinput);
 
             if (userinput == 'y' || userinput == 'Y')
             {
                 loop = 1;
-                printf("\n");
+                system("clear");
+                
             }
             if (userinput == 'n' || userinput == 'N')
             {
@@ -59,8 +59,6 @@ int main()
             }
 
    }
-
-
-
+  
   return 0;
 }
