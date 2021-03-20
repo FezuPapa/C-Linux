@@ -10,7 +10,7 @@ int main()
 {
 //Variables : start for users choice, h hours, m minutes, s seconds
     int start, h, m, s; h = 0, m = 0, s = 0;
-    
+    char p = 'p';
 
 
     printf("---- STOPWATCH ----\n\n"); 
@@ -48,6 +48,13 @@ int main()
             printf("---- STOPWATCH ----\n\n");  
         
             printf("%d : %d :%d \n\n", h, m, s); //print stopwatch
+
+            if (p != 'p' && p != 'P')
+            {
+                getchar();
+            }
+            
+
         }
             
     
